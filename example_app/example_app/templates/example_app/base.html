@@ -1,0 +1,23 @@
+{% extends 'navigation.html' %}
+
+<!DOCTYPE html>
+<html Lang='en'>
+    <body style="margin:0.1;padding:0.1; background-color: #e4e2db;">
+        
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/comcaan_marketing_promotions_add_0001.css' %}">
+
+    {% block content %}
+    
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+    {% comment %} <script type='text/javascript' src='http://192.168.10.220/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1200px; height: 1057px;'><object class='tableauViz' width='1200' height='1057' style='display:none;'><param name='host_url' value='http%3A%2F%2F192.168.10.220%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RevenueCalendar-BETA2-Jason&#47;RevenueCalendarBeta2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div> {% endcomment %}
+    <script type='text/javascript' src='http://analytics2/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1420px; height: 747px;'><object class='tableauViz' width='1420' height='747' style='display:none;'><param name='host_url' value='http%3A%2F%2Fanalytics2%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='django_test&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+    {% endblock %}
+
+    {% block page_name%}
+    {{my_var}}
+    {% endblock %}
+
+    </body>
+</html>
